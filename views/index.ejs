@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid accountant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <span class="logo">COVID 19</span>
+        <nav>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="" class="disabled">Prevenção</a></li>
+                <li><a href="" class="disabled">Contato</a></li>
+                
+            </ul>
+        </nav>
+        <i id="btn-menu" class="fas fa-bars"></i>
+    </header>
+    <% const json = casos%>
+    <%const obj = JSON.parse(json)%>
+    <div id="container">
+        <div class="info">
+            <div class="left">
+                <section class="casos">
+                    <div class="card mortos">
+                        <h2>MORTOS &#128128;</h2>
+                        <p class="info-number"><%=obj.data.deaths%></p>
+                    </div>
+                    <div class="card recuperados">
+                        <h2>RECUPERADOS	&#9989;</h2>
+                        <p class="info-number"><%=obj.data.recovered%></p>
+                    </div>
+                    <div class="card novos-casos">
+                        <h2>ATIVOS &#128567;</h2>
+                        
+                        <p class="info-number"><%=obj.data.cases%></p>
+                    </div>
+                    <div class="card em-acompanhamento">
+                        <h2>CONFIRMADOS &#129298;</h2>
+                        <p class="info-number"><%=obj.data.confirmed%></p>
+                    </div>
+                </section>
+            </div>
+            <div class="right">
+                <img src="/mask.jpg" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <p>Desenvolvido por Marcos Vinicius</p><br>
+            <ul class="social-icons">
+                <li><a href="https://github.com/Marcos-Ferreira13" target="_blanck"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </footer>
+    </div> <!-- FIM DO CONTAINER-->
+    <script src="/script.js"></script>
+</body>
+</html>
