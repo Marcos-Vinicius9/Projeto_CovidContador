@@ -1,12 +1,9 @@
 const request = require('request');
 const express = require("express");
-const { get } = require('request');
+
 
 const ejs = require('ejs')
-const teste = [{
-  nome:'hahaha',
-  idade:18
-}]
+
 const app = express();
 
 app.set('view engine','ejs');
