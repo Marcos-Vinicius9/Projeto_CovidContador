@@ -54,6 +54,10 @@ header .menu{
 .menu li{
     margin-left: 15px;
 }
+.disabled{
+    pointer-events: none;
+    color: #ccc;
+}
 #container{
     margin-top: 20px;
 }
@@ -64,6 +68,7 @@ header .menu{
     
 }
 
+/* =============================================== LEFT ============================================= */
 
 .casos{
     display: flex;
@@ -103,6 +108,11 @@ header .menu{
     background: #55AFD2;
 }
 
+.info-number{
+    font-size: 25px;
+}
+
+/* ================================================ RIGHT ============================================== */
 .right{
     display: flex;
     padding: 20px;
@@ -110,15 +120,13 @@ header .menu{
     justify-content: center;
 }
 
-.info-number{
-    font-size: 25px;
-}
+
 
 .date{
     color: white;
 }
 
-
+/* ============================ FOOTER =============================== */
 footer{
     color: white;
     text-align: center;
@@ -143,10 +151,8 @@ ul li a:hover{
     transition: all .5s ease-in;
 }
 
-.disabled{
-    pointer-events: none;
-    color: #ccc;
-}
+/* ================================= MEDIA QUERIES ============================================= */
+
 @media screen and (max-width:956px){
     #btn-menu{
         display: block;
@@ -183,4 +189,16 @@ ul li a:hover{
     .info-number{
         font-size: 15px;
     }
+}
+
+/* =========================== SCROLL BAR ================================== */
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
 }
