@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas de prevenção</title>
+    <link rel="icon" href="/mask-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+
+    <div class="container-cards">
+        <%for (let video of videos){ %>
+           <div class="card-mp4" id="<%=video.id%>">
+               <h4 class="title"><%=video.title%></h4>
+               <img src="https://img.youtube.com/vi/<%=video.id%>/maxresdefault.jpg" alt="">
+               <a href="<%=video.link%>" target="_blank" class="autor"><%=video.autor%></a>
+           </div>
+       <% }%>
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <iframe id="player">" frameborder="0"></iframe>
+            <i class="fas fa-times" id="btn-close"></i>
+        </div>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+    <script src="script.js"></script>
+</body>
+</html>

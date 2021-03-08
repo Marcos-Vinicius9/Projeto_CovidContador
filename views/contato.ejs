@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <%- include('../partials/header.ejs')%>
+    <div class="form-container">
+        <div class="formulario">
+            <form action="/form" method="POST">
+                <label for="">Seu nome:</label>
+                <input type="text" placeholder="Nome" name="nome">
+                <label for="">Email:</label>
+                <input type="email" placeholder="Email" name="email">
+                <label for="">Mensagem:</label>
+                <textarea name="mensagem" placeholder="Mensagem" name="" id="" cols="30" rows="10"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+
+
+    </div>
+    </div>
+
+    <%- include ('../partials/footer.ejs') %>
+    <script src="/script.js"></script>
+</body>
+</html>
