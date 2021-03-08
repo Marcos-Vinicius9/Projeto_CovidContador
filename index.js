@@ -78,9 +78,10 @@ app.post('/form',(req,res) =>{
       res.redirect('/');
     }
   });
-  
+
   
 });
+
 setInterval(() =>{
   getJson();
 },3000);
