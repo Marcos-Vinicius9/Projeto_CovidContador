@@ -6,14 +6,14 @@ const email = require('nodemailer');
 let transporter = email.createTransport({
   service:'gmail',
   auth:{
-    user:'********',
-    pass:'********'
+    user:'covcontador@gmail.com',
+    pass:'openthedoor12'
   }
-})
+});
 
 var mailOptions = {
-  from:'*******',
-  to:'*********',
+  from:'covcontador@gmail.com',
+  to:'marcos.ferreira@dcx.ufpb.br',
   subject:'Mensagem do covid Contador',
   html:''
 }
@@ -77,11 +77,9 @@ app.post('/form',(req,res) =>{
     }else{
       res.redirect('/');
     }
-  });
-
+  })
   
-});
-
+})
 setInterval(() =>{
   getJson();
 },3000);
