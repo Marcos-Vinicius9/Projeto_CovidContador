@@ -6,14 +6,14 @@ const email = require('nodemailer');
 let transporter = email.createTransport({
   service:'gmail',
   auth:{
-    user:'covcontador@gmail.com',
-    pass:'openthedoor12'
+    user:'*******',
+    pass:'********'
   }
 });
 
 var mailOptions = {
-  from:'covcontador@gmail.com',
-  to:'marcos.ferreira@dcx.ufpb.br',
+  from:'***',
+  to:'****',
   subject:'Mensagem do covid Contador',
   html:''
 }
