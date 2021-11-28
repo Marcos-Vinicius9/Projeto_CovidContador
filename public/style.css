@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
 
 *{
     margin: 0;
@@ -23,8 +24,9 @@ a{
     text-transform: uppercase;
 }
 
+
 body{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background:#68E4FF;
     
 }
@@ -34,6 +36,7 @@ header{
     width: 100%;
     height: 80px;
     display: flex;
+    font-weight: bold;
     align-items: center;
     justify-content: space-between;
     color: white;
@@ -176,59 +179,6 @@ ul li a:hover{
 
 
 /* ================================================= CONTATO ============================================= */
-.form-container{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.formulario{
-    width: 70%;
-    padding: 20px 15px;
-    background: #ccc;
-    border-radius: 15px;
-    color: gray;
-    margin: 0 auto;
-}
-
-.formulario label,.formulario input{
-    margin-bottom: 3px;
-    display: block;
-}
-.formulario input{
-    width: 100%;
-    display: block;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-}
-
-.formulario input:focus,textarea:focus{
-    border: 1px solid red;
-}
-.formulario button{
-    width: 100%;
-    padding: 15px 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    background-color: #0275d8;
-    display: block;
-    font-weight: bold;
-    color: white;
-    margin: 10px 0;
-    
-}
-
-
-textarea{
-    resize: none;
-    width: 100%;
-    padding: 10px;
-    border: none;
-}
 
 
 
@@ -254,6 +204,7 @@ textarea{
     color: gray;
     margin: 0 auto;
     position: relative;
+    font-size:15px;
 }
 .title{
     margin-bottom:10px;
@@ -309,9 +260,61 @@ textarea{
     cursor: pointer;
 }
 
+/* ======================================= PERSONALIZAÇÃO SECRETARIAS DE SAÚDE ============================== */
+
+.contatos-sec{
+    width: 70%;
+    margin: 5px 10px;
+    
+}
+
+.contato-sec{
+    margin: 9px 0;
+}
+
+.contato-sec .nome{
+    font-weight: bold;
+}
 
 
 
+/* ================================= DICAS NOVO NORMAL ========================================= */
+.dicas-container{
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-rows: 2;
+    border: 1px solid red;
+}
+
+.card-container{
+    border:1px solid red;
+    display: grid;
+    grid: repeat(2, 60px);
+}
+
+.card-container a{
+    color: black;
+}
+.card-container img{
+    width: 160px;
+    height: 160px;
+}
+
+.dicas-container h2{
+    text-align: center;
+}
+
+
+.card-dicas{
+    margin: 20px 0 ;
+    display: flex;
+    background: #ffff;
+}
+
+.card-dicas a{
+    font-weight: bold;
+}
 /* ================================= MEDIA QUERIES ============================================= */
 
 @media screen and (max-width:956px){
