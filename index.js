@@ -2,7 +2,6 @@ const request = require('request');
 const express = require("express");
 const videos = require('./videos');
 const email = require('nodemailer');
-const contatos = require('./contatos')
 
 let transporter = email.createTransport({
   service:'gmail',
@@ -53,7 +52,7 @@ getJson();
 
 
 app.get('/contato',(req,res)=>{
-  res.render('contato', {contatos:contatos})
+  res.render('contato')
 });
 
 app.get('/dicas', (req,res ) =>{
